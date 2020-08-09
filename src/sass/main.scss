@@ -2,5 +2,15 @@
  * Все паршалы импортировать в этот файл
  */
 
+// BACICS + HELPERS
+
 @import 'normalize.scss';
+@import 'helpers/fonts.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
 @import 'base.scss';
+@import 'helpers/extras.scss';
+
+//SECTIONS
+
+@import 'sections/header.scss';

@@ -1,0 +1,71 @@
+header {
+  background: #87509c;
+}
+
+.top_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.header_nav {
+  @include font($lh: 18px);
+  text-transform: uppercase;
+}
+
+.header_nav ul {
+  display: flex;
+}
+
+.header_nav ul li {
+  padding: 0 15px 0 15px;
+  height: 30px;
+  line-height: 32px;
+  transition: $animation;
+  cursor: pointer;
+}
+
+.header_nav ul li:not(:last-child) {
+  margin: 0 1px 0 0;
+}
+
+.header_nav ul li.active {
+  background: $third-color;
+  border-radius: 4px;
+}
+
+.header_nav ul li:hover,
+.header_nav ul li:focus {
+  background: $third-color;
+  border-radius: 4px;
+  transition: $animation;
+}
+
+.button_line {
+  text-align: center;
+  padding: 86px 0 145px 0;
+}
+
+.button_line p {
+   @include font($fs: 42px, $fw: 700, $fc: #f7f3ea, $lh: 48px);
+   margin-bottom: 52px;
+}
+
+.button {
+  display: inline-block;
+  height: 65px;
+  padding: 0 85px;
+  border-radius: 4px;
+  background-color: #eb7d4b;
+  text-transform: uppercase;
+  border-bottom: 4px solid #c86a40;
+  transition: $animation;
+  @include font($fs: 18px, $fw: 600, $ls: 0.02em, $lh: 65px);
+}
+
+.button:hover,
+.button:focus {
+ transition: $animation;
+ background: #c86a40;
+}
