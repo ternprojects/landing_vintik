@@ -1,0 +1,29 @@
+/* @media (min-width: 320px) {
+header {
+  width: 100%;
+  .top_line {
+    flex-direction: column;
+    img {
+      padding: 20px 0 10px 0;
+    }
+  .header_nav ul {
+    flex-direction: column;
+    text-align: center;
+    li {
+      margin: 10px;
+      &:before {
+        content: "<< ";
+      }
+      &:after {
+        content: " >>";
+      &:last-child {
+        padding-right: 15px;
+         }
+       }
+     }
+    }
+  }
+}
+}
+
+ */

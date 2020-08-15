@@ -1,5 +1,8 @@
 header {
   background: #87509c;
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: #000;
+  }
 }
 
 .top_line {
@@ -7,6 +10,12 @@ header {
   align-items: center;
   justify-content: space-between;
   min-height: 150px;
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+    img {
+      padding: 30px 0 10px 0;
+    }
+  }
 }
 
 .header_nav {
@@ -26,13 +35,13 @@ header {
   cursor: pointer;
 }
 
-.header_nav ul li:not(:last-child) {
-  margin: 0 1px 0 0;
-}
-
 .header_nav ul li.active {
   background: $third-color;
   border-radius: 4px;
+}
+
+.header_nav ul li:not(:last-child) {
+  margin: 0 1px 0 0;
 }
 
 .header_nav ul li:hover,
@@ -48,11 +57,11 @@ header {
 }
 
 .button_line p {
-   @include font($fs: 42px, $fw: 700, $fc: #f7f3ea, $lh: 48px);
-   margin-bottom: 52px;
+  @include font($fs: 42px, $fw: 700, $fc: #f7f3ea, $lh: 48px);
+  margin-bottom: 52px;
 }
 
-.button {
+.button_line .button {
   display: inline-block;
   height: 65px;
   padding: 0 85px;
@@ -62,10 +71,17 @@ header {
   border-bottom: 4px solid #c86a40;
   transition: $animation;
   @include font($fs: 18px, $fw: 600, $ls: 0.02em, $lh: 65px);
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: $third-color;
+    border-bottom: #fff;
+  }
 }
 
-.button:hover,
-.button:focus {
- transition: $animation;
- background: #c86a40;
+.button_line .button:hover,
+.button_line .button:focus {
+  transition: $animation;
+  background: #c86a40;
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: $third-color;
+  }
 }
