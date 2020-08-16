@@ -2,6 +2,7 @@ header {
   background: #87509c;
   @media (min-width: 320px) and (max-width: 650px) {
     background: #000;
+    width: calc(100% + 40px);
   }
 }
 
@@ -13,7 +14,7 @@ header {
   @media (min-width: 320px) and (max-width: 650px) {
     flex-direction: column;
     img {
-      padding: 30px 0 10px 0;
+      padding: 30px 0 30px 0;
     }
   }
 }
@@ -21,10 +22,17 @@ header {
 .header_nav {
   @include font($lh: 18px);
   text-transform: uppercase;
+   @media (min-width: 320px) and (max-width: 650px) {
+     @include font($fs: 22px);
+   }
 }
 
 .header_nav ul {
   display: flex;
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .header_nav ul li {
@@ -42,6 +50,10 @@ header {
 
 .header_nav ul li:not(:last-child) {
   margin: 0 1px 0 0;
+   @media (min-width: 320px) and (max-width: 650px) {
+    margin: 0;
+    margin-bottom: 10px;
+   }
 }
 
 .header_nav ul li:hover,
@@ -54,6 +66,9 @@ header {
 .button_line {
   text-align: center;
   padding: 86px 0 145px 0;
+  @media (min-width: 320px) and (max-width: 650px) {
+    padding-top: 40px;
+  }
 }
 
 .button_line p {
