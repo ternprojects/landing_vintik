@@ -1,0 +1,52 @@
+header {
+   @media (min-width: 320px) and (max-width: 650px) {
+     background: #000;
+   }
+}
+
+.top_line {
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.header_nav {
+  @media (min-width: 320px) and (max-width: 650px) {
+    @include font($fs: 22px);
+  }
+}
+
+.header_nav ul {
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.header_nav ul li:not(:last-child) {
+  @media (min-width: 320px) and (max-width: 650px) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.button_line {
+  @media (min-width: 320px) and (max-width: 650px) {
+    padding-top: 40px;
+  }
+}
+
+.button_line .button {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: $third-color;
+    border-bottom: #fff;
+    padding: 0 55px;
+  }
+}
+
+.button_line .button:hover,
+.button_line .button:focus {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: $third-color;
+  }
+}

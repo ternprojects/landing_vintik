@@ -11,8 +11,10 @@
 @import 'base.scss';
 @import 'helpers/extras.scss';
 @import 'helpers/media.scss';
+@import 'helpers/animation.scss';
 
 //SECTIONS
 
 @import 'sections/header.scss';
 @import 'sections/services.scss';
+@import 'sections/adaptive/header_adaptive.scss';
