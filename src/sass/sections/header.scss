@@ -10,7 +10,7 @@ header {
 }
 
 .top_line img {
-    padding: 30px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 .header_nav {
@@ -25,7 +25,7 @@ header {
 .header_nav ul li {
   padding: 0 15px 0 15px;
   height: 30px;
-  line-height: 32px;
+  line-height: 30px;
   transition: $animation;
   cursor: pointer;
 }
@@ -50,17 +50,19 @@ header {
   transition: $animation;
 }
 
-.button_line {
+//text
+.bottom_line {
   text-align: center;
-  padding: 36px 0 145px 0;
+  padding: 80px 0 145px 0;
 }
 
-.button_line p {
+.bottom_line p {
   @include font($fs: 42px, $fw: 700, $fc: #f7f3ea, $lh: 48px);
-  margin-bottom: 52px;
+  margin-bottom: 58px;
 }
 
-.button_line .button {
+//button
+.bottom_line .button {
   display: inline-block;
   height: 65px;
   padding: 0 85px;
@@ -72,8 +74,8 @@ header {
   @include font($fs: 18px, $fw: 600, $ls: 0.02em, $lh: 65px);
 }
 
-.button_line .button:hover,
-.button_line .button:focus {
+.bottom_line .button:hover,
+.bottom_line .button:focus {
   transition: $animation;
   background: #c86a40;
 }

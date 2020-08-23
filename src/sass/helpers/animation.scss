@@ -1,4 +1,3 @@
-//animation
 //menu
 .header_nav .header_nav__menu {
   transform: translate(0px, 50%);
@@ -12,25 +11,25 @@
 }
 
 //text
-.button_line .header__title {
+.bottom_line .header__title {
   transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease .2s;
 }
 
-.button_line .header__title._active {
+.bottom_line .header__title._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
 
 //button
-.button_line .button {
+.bottom_line .button {
   transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 
-.button_line .button._active {
+.bottom_line .button._active {
   transform: translate(0px, 0px);
   opacity: 1;
   transition: all 0.8s ease .6s;

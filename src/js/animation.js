@@ -16,7 +16,11 @@ if (animItems.length > 0) {
       if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
         animItem.classList.add('_active');
       } else {
-        animItem.classList.remove('_active');
+        //add stop-animation
+        if (!animItem.classList.contains('_anim-no-hide')) {
+          animItem.classList.remove('_active');
+        }
+        //
       }
     }
   }

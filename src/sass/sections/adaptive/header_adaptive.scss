@@ -30,13 +30,23 @@ header {
   }
 }
 
-.button_line {
+//text
+.bottom_line {
   @media (min-width: 320px) and (max-width: 650px) {
     padding-top: 40px;
   }
 }
 
-.button_line .button {
+.bottom_line p{
+  @media (min-width: 320px) and (max-width: 650px), (min-width: 650px) and (max-width: 992px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+//button
+.bottom_line .button {
   @media (min-width: 320px) and (max-width: 650px) {
     background: $third-color;
     border-bottom: #fff;
@@ -44,8 +54,8 @@ header {
   }
 }
 
-.button_line .button:hover,
-.button_line .button:focus {
+.bottom_line .button:hover,
+.bottom_line .button:focus {
   @media (min-width: 320px) and (max-width: 650px) {
     background: $third-color;
   }
