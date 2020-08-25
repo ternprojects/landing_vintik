@@ -1,0 +1,13 @@
+//text
+section.services {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: #000;
+  }
+}
+
+//icons
+section.services .services_list {
+   @media (min-width: 320px) and (max-width: 650px) {
+     flex-direction: column;
+   }
+}
