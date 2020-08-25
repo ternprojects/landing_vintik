@@ -37,10 +37,6 @@ header {
 
 .header_nav ul li:not(:last-child) {
   margin-right: 1px;
-  @media (min-width: 320px) and (max-width: 650px) {
-    margin: 0;
-    margin-bottom: 10px;
-   }
 }
 
 .header_nav ul li:hover,
