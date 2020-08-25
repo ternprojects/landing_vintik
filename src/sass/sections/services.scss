@@ -1,0 +1,59 @@
+//text
+section.services {
+  background: #17c2a4;
+  padding: 120px 0;
+  text-align: center;
+}
+
+section.services h2 {
+  @include font($fs: 40px, $fw: 700, $ls: 0.1em, $lh: .82);
+  text-transform: $tt;
+}
+
+section.services h2:after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background: rgba($color: #000, $alpha: .15);
+  margin: 20px auto 18px;
+  margin-top: 20px;
+}
+
+section.services .description {
+  @include font ($fs: 18px, $ls: 0.02em, $lh: 24px);
+  margin-bottom: 70px;
+}
+
+//icons
+section.services .services_list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+section.services .services_list .services_item {
+  width: calc(25% - 15px);
+/*  margin-right: 40px; */
+}
+
+section.services .services_list .service_item .img {
+  margin: 0 auto;
+  height: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//description
+h3.item_title {
+  @include font($fs: 24px, $fw: 700, $ls: 0.02em);
+  text-transform: $tt;
+  margin: 46px 0 18px 0;
+}
+
+p.item_description {
+  @include font($fw: 300, $ls: 0.02em, $lh: 24px);
+  padding: 0 25px;
+}
+

@@ -13,8 +13,9 @@
 @import 'helpers/media.scss';
 @import 'helpers/animation.scss';
 
-//SECTIONS
+//SECTIONS + ADAPTATIONS
 
 @import 'sections/header.scss';
 @import 'sections/services.scss';
 @import 'sections/adaptive/header_adaptive.scss';
+@import 'sections/adaptive/services_adaptive.scss';

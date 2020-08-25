@@ -15,7 +15,7 @@ header {
 
 .header_nav {
   @include font($lh: 18px);
-  text-transform: uppercase;
+  text-transform: $tt;
 }
 
 .header_nav ul {
@@ -23,7 +23,7 @@ header {
 }
 
 .header_nav ul li {
-  padding: 0 15px 0 15px;
+  padding: 0 18px 0 18px;
   height: 30px;
   line-height: 30px;
   transition: $animation;
@@ -36,7 +36,7 @@ header {
 }
 
 .header_nav ul li:not(:last-child) {
-  margin: 0 1px 0 0;
+  margin-right: 1px;
   @media (min-width: 320px) and (max-width: 650px) {
     margin: 0;
     margin-bottom: 10px;
