@@ -2,6 +2,7 @@
 section.services {
   @media (min-width: 320px) and (max-width: 650px) {
     background: #000;
+    padding: 0;
   }
 }
 
@@ -10,4 +11,16 @@ section.services .services_list {
    @media (min-width: 320px) and (max-width: 650px) {
      flex-direction: column;
    }
+}
+
+section.services p.description {
+   @media (min-width: 320px) and (max-width: 650px) {
+     margin-bottom: 20px;
+   }
+}
+
+section.services .item_description {
+  @media (min-width: 320px) and (max-width: 650px) {
+    margin-bottom: 20px;
+  }
 }
