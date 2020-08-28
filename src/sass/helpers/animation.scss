@@ -1,36 +1,75 @@
+//HEADER
 //menu
-.header_nav .header_nav__menu {
+header .header_nav .header_nav__menu {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all .8s ease 0s;
 }
 
-.header_nav .header_nav__menu._active {
+header .header_nav .header_nav__menu._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
 
 //text
-.bottom_line .header__title {
+header .bottom_line .header__title {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all 0.8s ease .2s;
+  transition: all .8s ease .2s;
 }
 
-.bottom_line .header__title._active {
+header .bottom_line .header__title._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
 
 //button
-.bottom_line .button {
+header .bottom_line .button {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all 0.8s ease 0s;
+  transition: all .8s ease 0s;
 }
 
-.bottom_line .button._active {
+header .bottom_line .button._active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 0.8s ease .6s;
+  transition: all .8s ease .6s;
 }
+//////////////////////////////////////////
+//SERVICES
+//text
+section.services h2 {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease 0s;
+ }
+
+section.services h2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+//text-description
+section.services p.description {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease .2s;
+}
+
+section.services p.description._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+/* //img-items
+section.services .services_list {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease .4s;
+}
+
+section.services .services_list._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+ */
