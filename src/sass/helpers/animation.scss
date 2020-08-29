@@ -38,38 +38,26 @@ header .bottom_line .button._active {
 //////////////////////////////////////////
 //SERVICES
 //text
-section.services h2 {
+section.services .text {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all .8s ease 0s;
+  transition: all .8s ease .10s;
  }
 
-section.services h2._active {
+section.services .text._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
 
-//text-description
-section.services p.description {
-  transform: translate(0px, 50%);
-  opacity: 0;
-  transition: all .8s ease .2s;
-}
-
-section.services p.description._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
-
-/* //img-items
+//img-items
 section.services .services_list {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all .8s ease .4s;
+  transition: all .8s ease .8s;
 }
 
 section.services .services_list._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
- */
+
