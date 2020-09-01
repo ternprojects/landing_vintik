@@ -1,18 +1,27 @@
  section.contact {
   @media (min-width: 320px) and (max-width: 650px) {
     background: #000;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }
 
+section.contact h2 {
+  @media (min-width: 320px) and (max-width: 650px) {
+    line-height: 50px;
+  }
+}
+
+section.contact h2::after {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: rgba($color: #fff, $alpha: 1.0);
+  }
+}
 
 section.contact p.description {
   @media (min-width: 320px) and (max-width: 650px) {
     margin-bottom: 45px;
   }
 }
-
-
 
 section.contact .contact_form {
   @media (min-width: 320px) and (max-width: 650px) {

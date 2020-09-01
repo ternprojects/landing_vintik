@@ -8,19 +8,27 @@ section.services {
 
 //icons
 section.services .services_list {
-   @media (min-width: 320px) and (max-width: 650px) {
-     flex-direction: column;
-   }
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 
 section.services h2 {
-  line-height: 50px;
+  @media (min-width: 320px) and (max-width: 650px) {
+    line-height: 50px;
   }
+}
+
+section.services h2::after {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: rgba($color: #fff, $alpha: 1.0);
+  }
+}
 
 section.services p.description {
-   @media (min-width: 320px) and (max-width: 650px) {
+  @media (min-width: 320px) and (max-width: 650px) {
      margin-bottom: 20px;
-   }
+  }
 }
 
 section.services .item_description {

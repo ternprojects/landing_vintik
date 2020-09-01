@@ -4,15 +4,13 @@ section.contact {
   text-align: center;
 }
 
-
+//text
 section.contact h2 {
   @include font($fs: 40px, $fw: 700, $ls: 0.1em, $lh: .82);
   text-transform: $tt;
 }
 
-
-
-section.contact h2:after {
+section.contact h2::after {
   content: "";
   display: block;
   width: 85px;
@@ -22,13 +20,12 @@ section.contact h2:after {
   margin-top: 20px;
 }
 
-
 section.contact .description {
   @include font ($fs: 18px, $ls: 0.02em, $lh: 24px);
   margin-bottom: 70px;
 }
 
-
+//form
 section.contact .contact_form {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +33,6 @@ section.contact .contact_form {
   max-width: 856px;
   margin: 0 auto;
 }
-
 
 section.contact .contact_form input[type="text"],
 section.contact .contact_form input[type="email"] {
@@ -68,7 +64,23 @@ section.contact .contact_form textarea {
   resize: none;
 }
 
+//button
 section.contact input[type="submit"] {
-  text-transform: uppercase;
   margin: 0 auto;
+  border: none;
+  display: inline-block;
+  height: 65px;
+  padding: 0 85px;
+  border-radius: 4px;
+  background-color: #30bae7;
+  text-transform: uppercase;
+  border-bottom: 4px solid #299ec5;
+  transition: $animation;
+  @include font($fs: 18px, $fw: 600, $ls: 0.02em, $lh: 65px);
+}
+
+section.contact input[type="submit"]:hover,
+section.contact input[type="submit"]:focus {
+  transition: $animation;
+  background: #299ec5;
 }

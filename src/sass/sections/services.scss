@@ -10,7 +10,7 @@ section.services h2 {
   text-transform: $tt;
 }
 
-section.services h2:after {
+section.services h2::after {
   content: "";
   display: block;
   width: 85px;
