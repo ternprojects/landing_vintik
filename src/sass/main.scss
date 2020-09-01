@@ -3,7 +3,6 @@
  */
 
 // BACICS + HELPERS
-
 @import 'normalize.scss';
 @import 'helpers/fonts.scss';
 @import 'helpers/variables.scss';
@@ -15,10 +14,10 @@
 /* @import 'helpers/video_bg.scss'; */
 
 //SECTIONS + ADAPTATIONS
-
 @import 'sections/header.scss';
 @import 'sections/services.scss';
 @import 'sections/adaptive/header_adaptive.scss';
 @import 'sections/adaptive/services_adaptive.scss';
 @import 'sections/contact.scss';
 @import 'sections/adaptive/contact_adaptive.scss';
+@import 'sections/footer.scss';
