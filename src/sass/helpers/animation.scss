@@ -23,18 +23,6 @@ header .bottom_line .header__title._active {
   opacity: 1;
 }
 
-//button
-header .bottom_line .button {
-  transform: translate(0px, 50%);
-  opacity: 0;
-  transition: all .8s ease 0s;
-}
-
-header .bottom_line .button._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-  transition: all .8s ease .6s;
-}
 //////////////////////////////////////////
 //SERVICES
 //text
@@ -47,20 +35,44 @@ section.services .text {
 section.services .text._active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all .8s ease .8s;
+  transition: all .8s ease .0s;
 }
 
-//img-items
-section.services .services_list {
+section.services .description .text {
   transform: translate(0px, 50%);
   opacity: 0;
   transition: all .8s ease .0s;
 }
 
-section.services .services_list._active {
+section.services .description .text._active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all .8s ease .10s;
+  transition: all .8s ease .0s;
+}
+
+//service-list
+section.services h3 {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease .0s;
+}
+
+section.services h3._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all .8s ease .2s;
+}
+
+section.services p {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease .0s;
+}
+
+section.services p._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all .8s ease .4s;
 }
 //////////////////////////////////////////////
 //CONTACT
