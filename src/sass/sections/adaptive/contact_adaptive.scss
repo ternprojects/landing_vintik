@@ -1,0 +1,40 @@
+ section.contact {
+  @media (min-width: 320px) and (max-width: 650px) {
+    background: #000;
+    padding-top: 40px;
+  }
+}
+
+
+section.contact p.description {
+  @media (min-width: 320px) and (max-width: 650px) {
+    margin-bottom: 45px;
+  }
+}
+
+
+
+section.contact .contact_form {
+  @media (min-width: 320px) and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+section.contact .contact_form input[type="text"],
+section.contact .contact_form input[type="email"],
+section.contact .contact_form textarea {
+  @media (min-width: 320px) and (max-width: 650px) {
+    @include font($fs: 18px, $fc: #000);
+    background: #fff;
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+section.contact .contact_form input::placeholder,
+section.contact .contact_form input::placeholder,
+section.contact .contact_form textarea::placeholder {
+  @media (min-width: 320px) and (max-width: 650px) {
+    @include font($fs: 18px, $fc: #000);
+  }
+}

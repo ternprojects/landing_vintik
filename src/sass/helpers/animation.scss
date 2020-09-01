@@ -41,23 +41,38 @@ header .bottom_line .button._active {
 section.services .text {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all .8s ease .10s;
+  transition: all .8s ease .0s;
  }
 
 section.services .text._active {
   transform: translate(0px, 0px);
   opacity: 1;
+  transition: all .8s ease .8s;
 }
 
 //img-items
 section.services .services_list {
   transform: translate(0px, 50%);
   opacity: 0;
-  transition: all .8s ease .8s;
+  transition: all .8s ease .0s;
 }
 
 section.services .services_list._active {
   transform: translate(0px, 0px);
   opacity: 1;
+   transition: all .8s ease .10s;
+}
+//////////////////////////////////////////////
+//CONTACT
+//contact-form
+section.contact h2 {
+  transform: translate(0px, 50%);
+  opacity: 0;
+  transition: all .8s ease .0s;
 }
 
+section.contact h2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+   transition: all .8s ease .12s;
+}

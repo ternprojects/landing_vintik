@@ -4,10 +4,13 @@ section.contact {
   text-align: center;
 }
 
+
 section.contact h2 {
   @include font($fs: 40px, $fw: 700, $ls: 0.1em, $lh: .82);
   text-transform: $tt;
 }
+
+
 
 section.contact h2:after {
   content: "";
@@ -19,18 +22,21 @@ section.contact h2:after {
   margin-top: 20px;
 }
 
+
 section.contact .description {
   @include font ($fs: 18px, $ls: 0.02em, $lh: 24px);
   margin-bottom: 70px;
 }
 
+
 section.contact .contact_form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 856px;
+  max-width: 856px;
   margin: 0 auto;
 }
+
 
 section.contact .contact_form input[type="text"],
 section.contact .contact_form input[type="email"] {
@@ -66,4 +72,3 @@ section.contact input[type="submit"] {
   text-transform: uppercase;
   margin: 0 auto;
 }
-
