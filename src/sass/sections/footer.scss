@@ -2,22 +2,33 @@ footer.footer {
   background: #344b8e;
 }
 
-footer.footer a:hover {
+footer.footer a:hover,
+footer.footer a:focus {
   color: #30bae7
 }
 
 //items
-.footer_social {
+footer.footer .footer_social {
   @include font($fs: 24px, $fw: 600, $ls: 0.02em);
 }
 
-.footer_social ul {
-  min-height: 110px;
+footer.footer .footer_social ul {
+  min-height: 95px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.footer_social a {
+footer.footer .footer_social a {
+  color: #fff;
+}
+
+footer.footer .author {
+  @include font($fs: 14px);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+footer.footer .author a {
   color: #fff;
 }

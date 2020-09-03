@@ -1,6 +1,7 @@
 footer.footer {
    @media (min-width: 320px) and (max-width: 650px) {
     background: #000;
+    min-height: 150px;
    }
 }
 
@@ -25,9 +26,15 @@ footer.footer .footer_social li {
   }
 }
 
-footer.footer .footer_social li:not(:nth-child(-3n+3)) {
+footer.footer .footer_social li:not(:nth-child(-2n+3)) {
   @media (min-width: 320px) and (max-width: 650px) {
     width: 35%;
   }
 }
 
+footer.footer .author {
+  @media (min-width: 320px) and (max-width: 650px) {
+    @include font($fs: 12px);
+    margin-top: 20px;
+  }
+}
